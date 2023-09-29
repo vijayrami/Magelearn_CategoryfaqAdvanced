@@ -1,0 +1,57 @@
+{
+    "magelearn_categoryfaq_question": {
+        "column": {
+            "question_id": true,
+            "title": true,
+            "answer": true,
+            "status": true,
+            "sort_order": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "MAGELEARN_CATEGORYFAQ_QUESTION_TITLE": true,
+            "MAGELEARN_CATEGORYFAQ_QUESTION_ANSWER": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "magelearn_categoryfaq_category": {
+        "column": {
+            "category_id": true,
+            "name": true,
+            "description": true,
+            "icon": true,
+            "sort_order": true,
+            "status": true,
+            "created_at": true,
+            "updated_at": true
+        },
+        "index": {
+            "MAGELEARN_CATEGORYFAQ_CATEGORY_CATEGORY_ID": true,
+            "MAGELEARN_CATEGORYFAQ_CATEGORY_NAME": true,
+            "MAGELEARN_CATEGORYFAQ_CATEGORY_DESCRIPTION": true
+        },
+        "constraint": {
+            "PRIMARY": true
+        }
+    },
+    "magelearn_categoryfaq_question_category": {
+        "column": {
+            "category_id": true,
+            "question_id": true,
+            "position": true
+        },
+        "index": {
+            "MAGELEARN_CATEGORYFAQ_QUESTION_CATEGORY_CATEGORY_ID": true,
+            "MAGELEARN_CATEGORYFAQ_QUESTION_CATEGORY_QUESTION_ID": true
+        },
+        "constraint": {
+            "PRIMARY": true,
+            "FK_65024C63A03C50AFBC21FA0045A006DC": true,
+            "FK_9F2D8FD3C346FD4D9AD1F2FD07CD7D12": true,
+            "MAGELEARN_CATEGORYFAQ_QUESTION_CATEGORY_CATEGORY_ID_QUESTION_ID": true
+        }
+    }
+}

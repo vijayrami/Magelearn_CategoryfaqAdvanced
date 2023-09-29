@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+<schema xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Setup/Declaration/Schema/etc/schema.xsd">
+	<table name="magelearn_categoryfaq_question" resource="default" engine="innodb" comment="magelearn_categoryfaq_question Table">
+		<column name="question_id" padding="10" xsi:type="int" nullable="false" unsigned="true" comment="ID" identity="true"/>
+		<column name="title" nullable="false" xsi:type="text" comment="Question Title"/>
+		<column name="answer" nullable="true" xsi:type="text" comment="Answer for the question"/>
+		<column name="status" nullable="true" xsi:type="int" comment="Question Display Status" identity="false"/>
+		<column name="sort_order" nullable="false" default="0" xsi:type="int" comment="Question Display Position" identity="false"/>
+		<column name="created_at" nullable="true" xsi:type="datetime" comment="Date of creation" default="CURRENT_TIMESTAMP"/>
+		<column name="updated_at" nullable="true" xsi:type="datetime" comment="Last update date" default="CURRENT_TIMESTAMP" on_update="true"/>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="question_id"/>
+		</constraint>
+		<index referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_TITLE" indexType="fulltext">
+            <column name="title"/>
+        </index>
+        <index referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_ANSWER" indexType="fulltext">
+            <column name="answer"/>
+        </index>
+	</table>
+	<table name="magelearn_categoryfaq_category" resource="default" engine="innodb" comment="magelearn_categoryfaq_category Table">
+		<column name="category_id" xsi:type="int" padding="10" unsigned="true" nullable="false" identity="true"  comment="ID"/>
+		<column name="name" nullable="false" xsi:type="text" comment="Name"/>
+		<column name="description" nullable="true" xsi:type="text" comment="Description"/>
+		<column name="icon" nullable="true" xsi:type="text" comment="Category Icon"/>
+		<column name="sort_order" nullable="false" xsi:type="int" default="0" comment="Sort Order Position" identity="false"/>
+		<column name="status" nullable="true" xsi:type="int" comment="Category Display Status" identity="false"/>
+		<column name="created_at" nullable="true" xsi:type="datetime" comment="Date of creation of this category" default="CURRENT_TIMESTAMP"/>
+		<column name="updated_at" nullable="true" xsi:type="datetime" comment="Last update date of this category" default="CURRENT_TIMESTAMP" on_update="true"/>
+		<index referenceId="MAGELEARN_CATEGORYFAQ_CATEGORY_CTR_ID" indexType="btree">
+			<column name="category_id"/>
+		</index>
+		<constraint xsi:type="primary" referenceId="PRIMARY">
+			<column name="category_id"/>
+		</constraint>
+		<index referenceId="MAGELEARN_CATEGORYFAQ_NAME" indexType="fulltext">
+            <column name="name"/>
+        </index>
+        <index referenceId="MAGELEARN_CATEGORYFAQ_DESCRIPTION" indexType="fulltext">
+            <column name="description"/>
+        </index>
+	</table>
+	<table name="magelearn_categoryfaq_question_category" resource="default" engine="innodb" comment="Category To Question Link Table">
+    <column xsi:type="int" name="category_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Category ID"/>
+    <column xsi:type="int" name="question_id" padding="10" unsigned="true" nullable="false" identity="false" comment="Question ID"/>
+    <column xsi:type="int" name="position" padding="11" unsigned="false" nullable="false" identity="false" default="0" comment="Position"/>
+    <constraint xsi:type="primary" referenceId="PRIMARY">
+      <column name="category_id"/>
+      <column name="question_id"/>
+    </constraint>
+    <constraint xsi:type="foreign" referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_CTGR_CTGR_ID_MAGELEARN_CATEGORYFAQ_CTGR_CTGR_ID" table="magelearn_categoryfaq_question_category" column="category_id" referenceTable="magelearn_categoryfaq_category" referenceColumn="category_id" onDelete="CASCADE"/>
+    <constraint xsi:type="foreign" referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_CTGR_QUESTION_ID_MAGELEARN_CATEGORYFAQ_QUESTION_QUESTION_ID" table="magelearn_categoryfaq_question_category" column="question_id" referenceTable="magelearn_categoryfaq_question" referenceColumn="question_id" onDelete="CASCADE"/>
+    <constraint xsi:type="unique" referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_CATEGORY_CATEGORY_ID_QUESTION_ID">
+      <column name="category_id"/>
+      <column name="question_id"/>
+    </constraint>
+    <index referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_CATEGORY_CATEGORY_ID" indexType="btree">
+      <column name="category_id"/>
+    </index>
+    <index referenceId="MAGELEARN_CATEGORYFAQ_QUESTION_CATEGORY_QUESTION_ID" indexType="btree">
+      <column name="question_id"/>
+    </index>
+  </table>
+</schema>

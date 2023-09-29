@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="2columns-right"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <update handle="styles"/>
+    <head>
+        <title>FAQ — Frequently Asked Questions</title>
+        <css src="Magelearn_Categoryfaq::css/accordion.css"/>
+    </head>
+    <body>
+        <referenceContainer name="content">
+            <block name="faq_block_questions" template="Magelearn_Categoryfaq::questions.phtml">
+                <arguments>
+                    <argument name="viewModel" xsi:type="object">Magelearn\Categoryfaq\ViewModel\Questions</argument>
+                </arguments>
+            </block>
+        </referenceContainer>
+    </body>
+</page>
