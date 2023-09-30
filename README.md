@@ -1,5 +1,7 @@
 # Magelearn_CategoryfaqAdvanced
-Magento 2 Advanced Category FAQ Extension. With FAQ Assigned to mltiple categories, Categories creation on fly from Question Edit form and option to upload the category Icon.
+Magento 2 Advanced Category FAQ Extension.
+With FAQ Assigned to multiple categories, Categories creation on the fly from the Question Edit form and the option to upload the category Icon.
+
 [![image.png](https://i.postimg.cc/bvmQX386/image.png)](https://postimg.cc/jWJWP6DN)
 
 [![image-1.png](https://i.postimg.cc/PqJCDhs4/image-1.png)](https://postimg.cc/B8WZWrvL)
