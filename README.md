@@ -7,3 +7,7 @@ Magento 2 Advanced Category FAQ Extension. With FAQ Assigned to mltiple categori
 [![image2.png](https://i.postimg.cc/J4sYpH3V/image2.png)](https://postimg.cc/56Mm00kn)
 
 [![Frequently-Asked-Questions-FAQ-Content-Magento-Admin.gif](https://i.postimg.cc/VLFQTYtK/Frequently-Asked-Questions-FAQ-Content-Magento-Admin.gif)](https://postimg.cc/JGt2HCPX)
+
+[![image.png](https://i.postimg.cc/Hxs1nWqY/image.png)](https://postimg.cc/yJ5brK6t)
+
+[![image.png](https://i.postimg.cc/mgsLR4gD/image.png)](https://postimg.cc/xc6DyWHD)
