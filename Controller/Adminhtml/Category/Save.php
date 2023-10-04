@@ -140,7 +140,7 @@ class Save extends \Magelearn\Categoryfaq\Controller\Adminhtml\Category
             $category->addData([
                 'level' => 1,
                 'entity_id' => $category->getId(),
-                'is_active' => $category->getEnabled(),
+                'is_active' => 1,
                 'parent' => 0
             ]);
             
