@@ -99,8 +99,7 @@ class Save extends Question
                     $question->save();
                     $this->messageManager->addSuccessMessage(__('The question has been saved.'));
                 }
-                
-                $this->_getSession()->setData('magelearn_item_post_data', false);
+
                 $this->dataPersistor->clear('magelearn_categoryfaq_question');
         
                 if ($this->getRequest()->getParam('back')) {
