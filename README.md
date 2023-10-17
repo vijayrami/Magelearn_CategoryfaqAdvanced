@@ -2,6 +2,7 @@
 
 ## How to Install
 -- Download the Zip and Create a folder inside `app/code/Magelearn/Categoryfaq` in your Magento Root Directory.
+
 -- Extract the Zip and Run Magento Commands.
 
 Magento 2 Advanced Category FAQ Extension.
