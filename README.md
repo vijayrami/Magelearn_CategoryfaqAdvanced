@@ -1,4 +1,4 @@
-# Magelearn_CategoryfaqAdvanced
+# Magelearn_Categoryfaq
 
 ## How to Install
 -- Download the Zip and Create a folder inside `app/code/Magelearn/Categoryfaq` in your Magento Root Directory.
