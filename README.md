@@ -10,9 +10,9 @@ With FAQ Assigned to multiple categories, Categories creation on the fly from th
 
 ![First image Alt text](/Images/fifth.png "FAQ title")
 
-[![image-1.png](https://i.postimg.cc/PqJCDhs4/image-1.png)](https://postimg.cc/B8WZWrvL)
+![First image Alt text](/Images/fourth.png "FAQ Questions")
 
-[![image2.png](https://i.postimg.cc/J4sYpH3V/image2.png)](https://postimg.cc/56Mm00kn)
+![First image Alt text](/Images/first.png "Test Questions")
 
 [![Frequently-Asked-Questions-FAQ-Content-Magento-Admin.gif](https://i.postimg.cc/VLFQTYtK/Frequently-Asked-Questions-FAQ-Content-Magento-Admin.gif)](https://postimg.cc/JGt2HCPX)
 
