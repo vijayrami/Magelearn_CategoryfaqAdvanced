@@ -14,8 +14,8 @@ With FAQ Assigned to multiple categories, Categories creation on the fly from th
 
 ![First image Alt text](/Images/first.png "Test Questions")
 
-[![Frequently-Asked-Questions-FAQ-Content-Magento-Admin.gif](https://i.postimg.cc/VLFQTYtK/Frequently-Asked-Questions-FAQ-Content-Magento-Admin.gif)](https://postimg.cc/JGt2HCPX)
+![First image Alt text](/Images/third.gif "Gif FAQ Questions")
 
-[![image.png](https://i.postimg.cc/Hxs1nWqY/image.png)](https://postimg.cc/yJ5brK6t)
+![First image Alt text](/Images/sixth.png "FAQ Categories")
 
-[![image.png](https://i.postimg.cc/mgsLR4gD/image.png)](https://postimg.cc/xc6DyWHD)
+![First image Alt text](/Images/second.png "FAQ Edit Categories")
