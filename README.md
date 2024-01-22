@@ -8,7 +8,7 @@
 Magento 2 Advanced Category FAQ Extension.
 With FAQ Assigned to multiple categories, Categories creation on the fly from the Question Edit form and the option to upload the category Icon.
 
-[![image.png](https://i.postimg.cc/bvmQX386/image.png)](https://postimg.cc/jWJWP6DN)
+![First image Alt text](/images/fifth.png "FAQ title"))  
 
 [![image-1.png](https://i.postimg.cc/PqJCDhs4/image-1.png)](https://postimg.cc/B8WZWrvL)
 
